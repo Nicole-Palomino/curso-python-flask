@@ -1,11 +1,17 @@
-<nav>
-    <ul>
-        <img src="{{url_for('static', filename='img/python.jpg')}}" alt="">
-        <li>
-            <a href="{{url_for('index')}}">Boton inicio</a>
-        </li>
-        <li>
-            <a href="https://www.google.com">Google</a>
-        </li>
-    </ul>
+<nav class="navbar navbar-default">
+    <img src="{{url_for('static', filename='img/python.jpg')}}" alt="">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="{{url_for('index')}}">Boton inicio</a>
+            </li>
+            <li>
+                <a href="https://www.google.com">Google</a>
+            </li>
+        </ul>
+    </div>
 </nav>
+
