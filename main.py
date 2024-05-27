@@ -4,6 +4,10 @@ app = Flask(__name__)
 
 items = ['Item 1', 'Item 2', 'Item 3', 'Item 4']
 
+@app.errorhandler(404)
+def not_found_endpoint(error):
+    return render_template('404.html', error= error)
+
 @app.route('/index')
 def index():
     user_ip_information = request.remote_addr
